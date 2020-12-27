@@ -21,7 +21,7 @@ p {
     margin-bottom: 40px;
 }
 
-.subtitulo:after {
+.subtitulo::after {
     content: "";
     display: block;
     width: 60px;
@@ -100,7 +100,7 @@ p {
 
 .introducao h1 {
     font-size: 48px;
-    color: #fff;
+    color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -109,19 +109,19 @@ p {
     max-width: 320px;
     margin: 0px auto;
     margin-bottom: 20px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .quote-externo p {
     font-style: italic;
 }
 
-.quote-externo p:before, .quote-externo p:after {
+.quote-externo p::before, .quote-externo p::after {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 14px auto 10px auto;
 }
 
@@ -179,4 +179,28 @@ p {
 
 .call p {
     padding-bottom: 20px;
+}
+
+/* PORTFÓLIO */
+
+.portfolio {
+    width: 100%;
+    background-color: #000000;
+    padding: 40px 0px;
+}
+
+.portfolio .subtitulo {
+    color: #FEC63E;
+}
+
+.portfolio .subtitulo::after {
+    background-color: #FEC63E;
+}
+
+.portfolio-lista li:last-child {
+    margin-top: 20px;
+}
+
+.portfolio .call p {
+    color: #ffffff;
 }
