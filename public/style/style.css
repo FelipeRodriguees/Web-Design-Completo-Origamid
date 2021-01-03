@@ -34,6 +34,25 @@ img {
     margin: 8px auto;
 }
 
+.subtitulo_interno {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo_interno::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+    margin: 8px 0px;
+}
+
 .btn {
     border: 3px solid #FEC63E;
     padding: 10px 30px;
@@ -90,6 +109,10 @@ img {
     color: #ffffff;
 }
 
+.header_menu ul li a.menu_ativo {
+    color: #ffffff;
+}
+
 /* INTRODUÇÃO */
 
 .introducao {
@@ -135,6 +158,33 @@ img {
     font-size: 14px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+/* INTRODUÇÃO INTERNA */
+
+.introducao_interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.introducao_interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao_interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+    margin: 6px auto 10px auto;
 }
 
 /* PRODUTOS */
@@ -232,6 +282,7 @@ img {
 
 .qualidade_lista {
     padding-top: 20px;
+    overflow: auto;
 }
 
 .qualidade_lista li {
