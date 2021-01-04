@@ -1,5 +1,6 @@
 .interna_sobre {
     background: url(/public/images/BG-Sobre.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .missao_sobre {
